@@ -1,0 +1,68 @@
+/* Common Styles */
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Merriweather', serif; */
+}
+
+/* Header Styles */
+
+.header{
+    margin: 50px 140px;
+    width: 100%;
+    max-width: 1320px;
+    height: 600px;
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url(../resources/banner-image.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    border-radius: 16px;
+}
+
+.banner{
+    padding: 177px 344px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #FFF;
+    
+}
+.banner-gretings{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner-title{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 72px;
+}
+
+/* Footer Section Styles */
+
+.footer{
+    width: 100%;
+    max-width: 1600px;
+    padding: 120px 140px;
+    background-color: #070211;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    display: block;
+}
+
+.info, .copywright{
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+    margin: 40px 0;
+}
+.social-media{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
