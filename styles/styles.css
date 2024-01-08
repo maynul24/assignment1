@@ -43,6 +43,37 @@
     line-height: 72px;
 }
 
+/* Promo Banner Styles */
+.promo-banner-content{
+    width: 100%;
+    max-width: 1320px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo-banner-title{
+    padding-bottom: 48px;
+    color: #F00;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.promo-banner-slogan{
+    color: #F00;
+    font-size: 24px;
+    font-weight: 500;   
+}
+
+.promo-category{
+    color: #070211;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+
+
+
 /* Newsletter Section Styles */
 .newsletter{
     width: 100%;
