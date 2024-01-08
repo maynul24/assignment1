@@ -1,23 +1,18 @@
     /* font-family: 'Inter', sans-serif; */
     /* font-family: 'Merriweather', serif; */
 /* Common Styles */
-.{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
 }
 
-.container{
-    width: 1320px;
-    margin: 50px 140px;
-}
 /* Header Styles */
 
 .header{
     width: 100%;
     max-width: 1320px;
-    margin: 50px 140px;
+    margin: 50px auto;
     height: 600px;
     background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url(../resources/banner-image.png);
     background-repeat: no-repeat;
@@ -47,6 +42,7 @@
 .promo-banner-content{
     width: 100%;
     max-width: 1320px;
+    margin: auto;
     font-family: 'Inter', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -72,16 +68,152 @@
 
 }
 
+/* Party Banner Styles */
+
+.party-banner{
+    width: 100%;
+    max-width: 1320px;
+    height: 600px;
+    margin: 50px auto;
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('../resources/Vectorrr.png');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.party-banner-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.party-banner-content{
+    color: #FFF;
+    padding-left: 126px;
+
+}
+
+.party-banner-title{
+    font-family:'Merriweather', serif;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
+}
+
+.party-banner-description{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.party-banner-image{
+    padding: 68px 138px 0;
+}
+
+/* Event Schedule Section Style */
+.event-schedule{
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+.schedule-details{
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    padding: 100px 385px;
+    color: #070211;
+    font-family:'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: capitalize;
+
+}
+
+.schedule-details span{
+    color: #F00;
+}
+
+.schedule-details button{
+    padding:16px 32px;
+    border-radius: 8px;
+    background: #F00;
+    color: #FFF;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 64px;
+
+}
+
+/* Gift Section Styles */
+.gift-section{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.gift-content{
+
+}
+.gift-section-tag-line{
+    color: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.gift-section-title{
+    font-family: 'Merriweather', serif;
+    color: #070211;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 22px;
+}
+
+.gift-section p{
+    font-family: 'Inter', sans-serif;
+    color: rgba(7, 2, 17, 0.60);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.gift-items{
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.gift-items img:hover{
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
+    box-shadow: 0 0 30px rgba(211, 49, 0, 0.7);
+}
+
+
 
 
 /* Newsletter Section Styles */
 .newsletter{
     width: 100%;
-    height: 616px;
+    padding-bottom: 120px;
 }
 .newsletter-content{
     text-align: center;
     font-family: 'Inter', sans-serif;
+}
+
+.newsletter-content img{
+    padding: 80px 0 40px;
 }
 
 .newsletter-title{
@@ -92,6 +224,7 @@
 }
 
 .newsletter-description{
+    padding: 22px 0 48px;
     color: rgba(7, 2, 17, 0.60);
     font-size: 20px;
     font-weight: 400;
@@ -101,10 +234,11 @@
 .newsletter-content input{
     padding: 25px 477px 25px 30px;
     border: 0;
-    /* border-radius: 50px; */
     background-color: #FFF;
     color:  rgba(7, 2, 17, 0.30);
     font-size: 18px;
+    outline: none;
+
 }
 
 .newsletter-content button{
@@ -114,13 +248,14 @@
     background: #F00;
     font-size: 18px;
     color: #FFF;
+    margin-left: -10px;
 }
 
 /* Footer Section Styles */
 
 .footer{
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     padding: 120px 140px;
     background-color: #070211;
     font-family: 'Inter', sans-serif;
@@ -129,13 +264,17 @@
     display: block;
 }
 
-.info, .copywright{
+.info{
+    padding: 120px 140px 0;
     display: flex;
     justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
 }
 
 hr{
-    margin: 40px 0;
+    margin: 50px 0;
 }
 .social-media{
     display: flex;
